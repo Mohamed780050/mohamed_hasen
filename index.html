@@ -250,8 +250,41 @@
                     src="https://www.youtube.com/embed/8UjX_VIrYrc?si=15l9W07H6bOs_HIx"
                     frameborder="0"
                     class="w-full h-full"
+                    id="video"
                   ></iframe>
                 </div>
+              </div>
+              <div
+                class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-6"
+              >
+                <button
+                  id="prevButton"
+                  class="group flex items-center gap-2 rounded-lg px-6 py-3 text-lg font-bold text-primary transition-all hover:bg-secondary hover:text-accent-gold dark:text-white dark:hover:bg-primary"
+                >
+                  <span
+                    class="material-symbols-outlined transition-transform group-hover:translate-x-1"
+                    >arrow_forward</span
+                  >
+                  <span>الفيديو السابق</span>
+                </button>
+                <!-- <div
+                  class="flex items-center gap-3 rounded-xl bg-secondary px-8 py-3 text-lg font-bold text-primary shadow-sm dark:bg-primary dark:text-white"
+                >
+                  <span>فيديو</span>
+                  <span class="text-2xl text-accent-gold">1</span>
+                  <span class="text-base opacity-70">من</span>
+                  <span>5</span>
+                </div> -->
+                <button
+                  id="nextButton"
+                  class="group flex items-center gap-2 rounded-lg bg-accent-gold px-8 py-3 text-lg font-bold text-white shadow-md transition-all hover:bg-opacity-90 hover:shadow-glow-yellow"
+                >
+                  <span>الفيديو التالي</span>
+                  <span
+                    class="material-symbols-outlined transition-transform group-hover:-translate-x-1"
+                    >arrow_back</span
+                  >
+                </button>
               </div>
             </div>
           </div>
@@ -591,4 +624,5 @@
       </footer>
     </div>
   </body>
+  <script src="./main.js"></script>
 </html>
