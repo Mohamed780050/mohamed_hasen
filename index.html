@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>د. احمد حسن - متخصص الدبلومة الأمريكية</title>
+    <title>د. محمد حسن - متخصص الدبلومة الأمريكية</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
     />
     <style>
@@ -29,6 +29,7 @@
         background-color: #bc2141;
         animation: blink 1s step-end infinite;
         vertical-align: bottom;
+        margin-right: 4px;
       }
       @keyframes blink {
         from,
@@ -37,6 +38,24 @@
         }
         50% {
           background-color: #bc2141;
+        }
+      }
+      .dynamic-text::after {
+        content: "الدبلومة الأمريكية";
+        animation: cycleText 9s infinite;
+      }
+      @keyframes cycleText {
+        0%,
+        30% {
+          content: "الدبلومة الأمريكية";
+        }
+        33%,
+        63% {
+          content: "اختبارات SAT";
+        }
+        66%,
+        100% {
+          content: "البكالوريا";
         }
       }
       .group:hover .sparkle {
@@ -68,6 +87,16 @@
           transform: translateY(0);
         }
       }
+      .chat-scroll::-webkit-scrollbar {
+        width: 4px;
+      }
+      .chat-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .chat-scroll::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+      }
     </style>
     <script>
       tailwind.config = {
@@ -78,8 +107,8 @@
               primary: "#0A2540", // Deep Blue for credibility
               secondary: "#F0F4F8",
               accent: {
-                gold: "#bc2141", // Changed from #D4AF37 to #bc2141
-                yellow: "rgb(246, 169, 47)", // Changed from #FFC107 to rgb(246, 169, 47)
+                gold: "#bc2141", // Deep Red/Crimson
+                yellow: "rgb(246, 169, 47)", // Orange/Yellow accent
               },
               "course-est": "#E0F7FA", // Light Blue
               "course-sat": "#FFF3E0", // Warm Orange
@@ -100,7 +129,7 @@
               full: "9999px",
             },
             boxShadow: {
-              "glow-yellow": "0 0 15px 5px rgba(246, 169, 47, 0.4)", // Updated glow color
+              "glow-yellow": "0 0 15px 5px rgba(246, 169, 47, 0.4)",
             },
           },
         },
@@ -123,7 +152,7 @@
                 >school</span
               >
               <h2 class="text-xl font-bold text-primary dark:text-white">
-                د. احمد حسن
+                د. محمد حسن
               </h2>
             </div>
             <nav class="hidden md:flex items-center gap-8">
@@ -142,15 +171,10 @@
                 href="#testimonials"
                 >آراء الطلاب</a
               >
-              <a
-                class="text-sm font-medium hover:text-accent-gold transition-colors"
-                href="#faq"
-                >الأسئلة الشائعة</a
-              >
             </nav>
             <a
-              class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent-yellow text-slate-900 text-sm font-bold shadow-md hover:bg-opacity-90 transition-all hover:shadow-lg"
-              href="#register"
+              class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent-gold text-white text-sm font-bold shadow-md hover:bg-opacity-90 transition-all hover:shadow-lg"
+              href="https://wa.link/7i8shq"
             >
               <span class="truncate">احجز مكانك</span>
             </a>
@@ -158,7 +182,7 @@
         </div>
       </header>
       <main class="flex-grow">
-        <section class="relative h-[90vh] text-white">
+        <section class="relative h-[91vh] text-white">
           <div
             class="absolute inset-0 z-0 bg-cover bg-center"
             style="
@@ -175,9 +199,9 @@
               <h1
                 class="text-4xl font-black leading-tight tracking-tight md:text-5xl lg:text-6xl text-white"
               >
-                حقق التفوق في الدبلومة الأمريكية مع الدكتور احمد حسن<span
-                  class="typing-cursor"
-                ></span>
+                حقق التفوق مع الدكتور محمد حسن في
+                <span class="text-accent-yellow dynamic-text"></span
+                ><span class="typing-cursor"></span>
               </h1>
               <p class="text-lg text-white/80">
                 انضم إلى أفضل الدورات المتخصصة في الرياضيات والفيزياء، المصممة
@@ -185,8 +209,8 @@
               </p>
               <div class="flex justify-center md:justify-start gap-4 mt-4">
                 <a
-                  class="group relative flex min-w-[220px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-6 bg-accent-yellow text-slate-900 text-lg font-bold shadow-lg shadow-accent-yellow/30 transition-all hover:shadow-glow-yellow"
-                  href="#register"
+                  class="group relative flex min-w-[220px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-6 bg-accent-gold text-white text-lg font-bold shadow-lg shadow-accent-gold/30 transition-all hover:shadow-glow-yellow"
+                  href="https://wa.link/7i8shq"
                 >
                   <span
                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-white/20 rounded-full sparkle opacity-0"
@@ -199,94 +223,47 @@
               <img
                 alt="Dr. Mohamed Hassan"
                 class="w-80 h-80 rounded-full object-cover border-4 border-accent-gold shadow-2xl"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEZZuPz7424m_ebR5hArnZzKFPbzyktagDvR6xEEFY4DUxAFsifwpfZR7-LqWId4b4wxBN1p2khjNYvc140Bn22j43qdvuGx1ghdeNoGzNkyBlIiFKBQP8Qdx380nRooJPaMMMeC2Hg8y3GAYiub4duSoutuZeQTLENV-j9C4cWccsGv8ONgbPjzTdnuJU_1wnufYDdR31UA1ULCq-9yBE-NSvMgA0WpdmAf36AGBPRJn0HB6mI3j29601pbuu3uRO2uUmg0yNEA"
+                src="./assets/271798041_460497372374906_6286743119725866100_n.jpg"
               />
             </div>
           </div>
         </section>
-        <section class="py-20" id="about">
+        <section
+          class="py-20 bg-background-light dark:bg-background-dark"
+          id="video-showcase"
+        >
           <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
+            <div class="text-center mb-12">
               <h2
                 class="text-3xl font-bold tracking-tight text-primary dark:text-accent-gold"
               >
-                رحلة من الخبرة والنجاح تمتد لأكثر من 15 عامًا
+                من هو د. محمد حسن
               </h2>
-              <p
-                class="text-lg text-text-light/80 dark:text-text-dark/80 mt-2 max-w-3xl mx-auto"
-              >
-                منذ بداياتي، كان شغفي هو تبسيط العلوم ومساعدة الطلاب على تحقيق
-                إمكاناتهم الكاملة. على مدار 15 عامًا، قمت بتطوير استراتيجيات
-                تعليمية مبتكرة أثبتت فعاليتها في مساعدة آلاف الطلاب على التفوق
-                في اختبارات الدبلومة الأمريكية.
-              </p>
             </div>
-            <div class="relative max-w-4xl mx-auto">
+            <div class="max-w-4xl mx-auto">
               <div
-                class="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-700 hidden md:block"
-                style="transform: translateX(-50%)"
-              ></div>
-              <div class="md:grid md:grid-cols-2 md:gap-y-12">
-                <div class="relative flex justify-end mb-12 md:mb-0">
-                  <div class="md:w-10/12 text-center md:text-right">
-                    <h3 class="text-2xl font-bold text-primary dark:text-white">
-                      بداية الرحلة
-                    </h3>
-                    <p class="mt-2 text-text-light/70 dark:text-text-dark/70">
-                      بدء مسيرة تدريس مناهج الدبلومة الأمريكية بشغف لتبسيط
-                      المفاهيم المعقدة.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute top-[-20px] md:left-[-24px] bg-accent-gold text-white text-xl font-bold size-12 rounded-full flex items-center justify-center z-10"
-                  >
-                    2008
-                  </div>
-                </div>
-                <div></div>
-                <div></div>
-                <div class="relative flex justify-start mb-12 md:mb-0">
-                  <div class="md:w-10/12 text-center md:text-left">
-                    <h3 class="text-2xl font-bold text-primary dark:text-white">
-                      تطوير المناهج
-                    </h3>
-                    <p class="mt-2 text-text-light/70 dark:text-text-dark/70">
-                      ابتكار استراتيجيات فريدة لحل الاختبارات ساهمت في تحقيق
-                      الطلاب لنتائج قياسية.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute top-[-20px] md:right-[-24px] bg-primary text-white text-xl font-bold size-12 rounded-full flex items-center justify-center z-10"
-                  >
-                    2015
-                  </div>
-                </div>
-                <div class="relative flex justify-end">
-                  <div class="md:w-10/12 text-center md:text-right">
-                    <h3 class="text-2xl font-bold text-primary dark:text-white">
-                      الانطلاق الرقمي
-                    </h3>
-                    <p class="mt-2 text-text-light/70 dark:text-text-dark/70">
-                      إطلاق أولى الدورات التدريبية عبر الإنترنت للوصول إلى عدد
-                      أكبر من الطلاب.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute top-[-20px] md:left-[-24px] bg-accent-gold text-white text-xl font-bold size-12 rounded-full flex items-center justify-center z-10"
-                  >
-                    2020
-                  </div>
+                class="group relative aspect-video w-full overflow-hidden rounded-xl bg-gray-900 shadow-2xl border border-gray-200 dark:border-gray-800"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-primary via-[#0d2e4e] to-[#bc2141] opacity-70"
+                ></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <iframe
+                    src="https://www.youtube.com/embed/8UjX_VIrYrc?si=15l9W07H6bOs_HIx"
+                    frameborder="0"
+                    class="w-full h-full"
+                  ></iframe>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="py-20 bg-secondary dark:bg-primary/95">
+        <section class="py-20 bg-secondary dark:bg-primary/95" id="about">
           <div class="container mx-auto px-4 text-center">
             <h2
               class="text-3xl font-bold tracking-tight mb-4 text-primary dark:text-accent-gold"
             >
-              لماذا تختار د. احمد حسن؟
+              لماذا تختار د. محمد حسن؟
             </h2>
             <p
               class="text-lg text-text-light/80 dark:text-text-dark/80 mb-12 max-w-3xl mx-auto"
@@ -397,7 +374,7 @@
                 <div
                   class="w-full h-40 bg-cover bg-center"
                   style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdAKHNkyvqjSTV6PtZ3ZWXQW76eA42eftHzRO1cgbFGXlX6eTd6Wx3LHhIQIIf1SJMR3Pnx13v6zvyKTTo1IgOJBOrBpoKTA464YYSFm105voXOpUTCfSyYXaZ_xnkYVaa3f_pYqTP2HzArVXinwQmdTteC5unJbp49YLDIzMo5zyWXT4V8pvmvt6zCc_TpWvYQEKpwyc9OyHgxFSBbQKs3uCQGErPPXBUABlCzPBXHgeb05r9N8nd5oAX6b6p-A2RHMIvgAxxJA');
+                    background-image: url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
                   "
                 ></div>
                 <div
@@ -409,12 +386,6 @@
                   >
                     تغطية كاملة لمنهج الفيزياء والرياضيات لاختبار EST.
                   </p>
-                  <a
-                    class="text-primary dark:text-accent-gold font-bold text-sm mt-4 inline-flex items-center gap-2 group-hover:gap-3 transition-all"
-                    href="#"
-                    >عرض التفاصيل
-                    <span class="material-symbols-outlined">arrow_back</span></a
-                  >
                 </div>
               </div>
               <div
@@ -423,7 +394,7 @@
                 <div
                   class="w-full h-40 bg-cover bg-center"
                   style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSKuNDy_Lgh3yUHJxjdGRQRoibLdDxmNzKTgvFPukM0WgoaYW1bAKBd_-kwmDQinzSmuZKHG0v0s2Be1XXfWn7vjnYDuih7VhcQKgJ506NR91VdvCK1s2FmtFfJkEwFVWkBW8-1vHP1G6T2dyKrlfKs7vWrxIXuyQxEXZ2wog3Tnn2oQM3nGGtAxNOscPdszWqvGU9t4bsMdbGEIWh2R3M3KYGQJHP31_I3aDrXC4LBq1TIi8d5pMVRoKJNVHavSJu0rTlJ9Slbg');
+                    background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
                   "
                 ></div>
                 <div
@@ -435,12 +406,6 @@
                   >
                     شرح شامل لأقسام الرياضيات مع تدريبات مكثفة.
                   </p>
-                  <a
-                    class="text-primary dark:text-accent-gold font-bold text-sm mt-4 inline-flex items-center gap-2 group-hover:gap-3 transition-all"
-                    href="#"
-                    >عرض التفاصيل
-                    <span class="material-symbols-outlined">arrow_back</span></a
-                  >
                 </div>
               </div>
               <div
@@ -449,7 +414,7 @@
                 <div
                   class="w-full h-40 bg-cover bg-center"
                   style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaU4nlXkbGB2y8P3qjyyPFPAckAE8a0fgWd5k8eahoS0HWzROFN4ZrpjbJW2ok3XuLa3cckjJNyU8I7X0_nlkMgJ4aLhe0X3S6L5X6LnotL1fTONYDaQb8CpPyuGW6B2NLhLU3sNyWljhBPt0q2T5zjTG4kgZnzRpOBWwxnlWMC0Qc9H5ZVVxGCnUxKFGY-YasfTqXVjdtrp-d_R-LR-xuHh9I2A9M9qy2teIgyjgN97JyRXzBLXw1yeSCKl2NkJWnpVe6i9vyFQ');
+                    background-image: url('https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
                   "
                 ></div>
                 <div
@@ -461,12 +426,6 @@
                   >
                     استعد للنسخة الرقمية من اختبار SAT بأحدث الاستراتيجيات.
                   </p>
-                  <a
-                    class="text-primary dark:text-accent-gold font-bold text-sm mt-4 inline-flex items-center gap-2 group-hover:gap-3 transition-all"
-                    href="#"
-                    >عرض التفاصيل
-                    <span class="material-symbols-outlined">arrow_back</span></a
-                  >
                 </div>
               </div>
               <div
@@ -475,7 +434,7 @@
                 <div
                   class="w-full h-40 bg-cover bg-center"
                   style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMIVisoZ057kKPk1Hp988dkv1ATvM6Fs5EoJ6RftqCoZ4YE_pd8OFPdABJDg5bmsJckWo_Z8W7gyFCR12kxq--VSmRszd2mspioJm3jwJ7PyPCXWHrBg720T7P-beCA5JBiCdmROYMhJULW6MN1EdXSRW_SWIC1pC9gxoQNGTpCLKIomYKUn-k0Emc-9G5QbGq0UZneE9ip4Ik4SMpaN_F-fEcFeZOoGOjLSwrAVgokIShqRtZAAPmpcVNDEReHiizoRadP77_zg');
+                    background-image: url('https://images.unsplash.com/photo-1532618500676-2e0cbf7ba8b8?q=80&w=1640&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
                   "
                 ></div>
                 <div
@@ -487,12 +446,6 @@
                   >
                     تأسيس قوي ومتقدم في حساب التفاضل والتكامل.
                   </p>
-                  <a
-                    class="text-primary dark:text-accent-gold font-bold text-sm mt-4 inline-flex items-center gap-2 group-hover:gap-3 transition-all"
-                    href="#"
-                    >عرض التفاصيل
-                    <span class="material-symbols-outlined">arrow_back</span></a
-                  >
                 </div>
               </div>
             </div>
@@ -510,7 +463,7 @@
                 شهادات نعتز بها
               </h2>
               <p class="text-lg text-text-light/80 dark:text-text-dark/80 mt-2">
-                آراء طلابنا هي الدافع الأكبر لنجاحنا المستمر.
+                صور حقيقية من محادثات طلابنا تعكس قصص نجاحهم.
               </p>
               <p
                 class="mt-4 text-2xl font-bold text-green-600 dark:text-green-400"
@@ -518,177 +471,327 @@
                 "95% من طلابنا حققوا درجات أعلى بعد الانضمام لدوراتنا"
               </p>
             </div>
-            <div class="relative">
+            <div class="relative w-full">
               <div
-                class="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-4"
+                class="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-8 justify-start lg:justify-center items-center"
               >
-                <div class="snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
+                <div class="snap-center flex-shrink-0 w-80 md:w-80 group">
                   <div
-                    class="bg-background-light dark:bg-primary p-8 rounded-xl shadow-lg flex flex-col h-full"
+                    class="relative rounded-[2rem] border-8 border-gray-800 bg-gray-800 shadow-2xl overflow-hidden h-[500px] transition-transform duration-300 group-hover:-translate-y-2"
                   >
-                    <div class="flex items-center mb-4">
-                      <img
-                        alt="Student photo"
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0sojrSFw6C2c-dj0U9T4B4Eok9W84sogjQ7Ns2t2I16W7sfM43xt-x3KsKqlTMx13miSE_C8Q68N5BnQtltlNWAEMczD8qqX0PsQdGsltjCGkLo-pJJXdBexQGnTPdk324L-9ULPSskfBlBzEpQGUlsTfxfoAi3urBP3GdtrQ3n3g8SdYivU4GqAi8ZFjjMhHDAqQRrKkV_mHzvHAL6h8II-A_fZlra4u1p8t2yUbCcSLBlQje16iELJlIMbj9idpA3zGvgB9cw"
-                      />
-                      <div>
-                        <h4 class="font-bold text-lg">أحمد خالد</h4>
-                        <p
-                          class="text-sm text-text-light/60 dark:text-text-dark/60"
+                    <div
+                      class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-800 rounded-b-xl z-20"
+                    ></div>
+                    <div
+                      class="absolute inset-0 bg-[#e5ddd5] flex flex-col h-full w-full rounded-[1.5rem] overflow-hidden"
+                    >
+                      <div
+                        class="bg-[#075e54] p-4 pt-8 flex items-center gap-3 shadow-md z-10 text-white"
+                      >
+                        <span
+                          class="material-symbols-outlined text-sm cursor-pointer hover:bg-white/10 rounded-full p-1"
+                          >arrow_forward</span
                         >
-                          طالب SAT Math
-                        </p>
+                        <div
+                          class="w-10 h-10 rounded-full bg-gray-300 overflow-hidden border border-white/20"
+                        >
+                          <img
+                            alt="Ahmed Avatar"
+                            class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0sojrSFw6C2c-dj0U9T4B4Eok9W84sogjQ7Ns2t2I16W7sfM43xt-x3KsKqlTMx13miSE_C8Q68N5BnQtltlNWAEMczD8qqX0PsQdGsltjCGkLo-pJJXdBexQGnTPdk324L-9ULPSskfBlBzEpQGUlsTfxfoAi3urBP3GdtrQ3n3g8SdYivU4GqAi8ZFjjMhHDAqQRrKkV_mHzvHAL6h8II-A_fZlra4u1p8t2yUbCcSLBlQje16iELJlIMbj9idpA3zGvgB9cw"
+                          />
+                        </div>
+                        <div class="flex flex-col">
+                          <span class="font-bold text-sm leading-tight"
+                            >أحمد خالد</span
+                          >
+                          <span class="text-[10px] opacity-80 leading-tight"
+                            >متصل الآن</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="flex-1 overflow-y-auto chat-scroll p-4 flex flex-col gap-3 relative"
+                      >
+                        <div
+                          class="absolute inset-0 opacity-5"
+                          style="
+                            background-image: radial-gradient(
+                              #444 1px,
+                              transparent 1px
+                            );
+                            background-size: 16px 16px;
+                          "
+                        ></div>
+                        <div
+                          class="self-start bg-white rounded-lg rounded-tr-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            يا دكتور، حبيت أطمن حضرتك على نتيجة الـ EST.
+                          </p>
+                          <span
+                            class="text-[9px] text-gray-500 block text-left mt-1"
+                            >10:15 ص</span
+                          >
+                        </div>
+                        <div
+                          class="self-start bg-white rounded-lg rounded-tr-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            الحمد لله جبت Score عالي جداً في الماث! بجد شكراً
+                            لمجهودك.
+                          </p>
+                          <span
+                            class="text-[9px] text-gray-500 block text-left mt-1"
+                            >10:15 ص</span
+                          >
+                        </div>
+                        <div
+                          class="self-end bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            ألف مبروك يا أحمد! ده تعبك ومجهودك، دايماً متفوق يا
+                            بطل ❤️
+                          </p>
+                          <div class="flex items-center justify-end gap-1 mt-1">
+                            <span class="text-[9px] text-gray-500"
+                              >10:16 ص</span
+                            >
+                            <span
+                              class="material-symbols-outlined text-[12px] text-blue-500"
+                              >done_all</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-[#f0f0f0] p-3 flex items-center gap-2">
+                        <div
+                          class="flex-grow h-8 bg-white rounded-full px-3 flex items-center text-gray-400 text-xs"
+                        >
+                          اكتب رسالة...
+                        </div>
+                        <div
+                          class="w-8 h-8 bg-[#075e54] rounded-full flex items-center justify-center text-white shadow-sm"
+                        >
+                          <span class="material-symbols-outlined text-sm"
+                            >mic</span
+                          >
+                        </div>
                       </div>
                     </div>
-                    <p
-                      class="text-text-light/80 dark:text-text-dark/80 italic flex-grow"
-                    >
-                      "شرح د. احمد حسن للمسائل المعقدة كان رائعًا! بفضل طريقته،
-                      تمكنت من الحصول على درجة ممتازة في اختبار SAT."
-                    </p>
                   </div>
                 </div>
-                <div class="snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
+                <div class="snap-center flex-shrink-0 w-80 md:w-80 group">
                   <div
-                    class="bg-background-light dark:bg-primary p-8 rounded-xl shadow-lg flex flex-col h-full"
+                    class="relative rounded-[2rem] border-8 border-gray-800 bg-gray-800 shadow-2xl overflow-hidden h-[500px] transition-transform duration-300 group-hover:-translate-y-2"
                   >
-                    <div class="flex items-center mb-4">
-                      <img
-                        alt="Student photo"
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYRuOdA84DSOiNf6OBT6Hp6esGVzYxk6OcjY1NALrlPut7UyW152iOco25cDFVaIO0r0FyMJ38gMz4KzQY4Xn7vUxEFEEmMSbljCl8KFRvFyWQIA1qAbNdDa_Lu9_pJVo4nba0GmxArQuTAJ0tA7hwHsafpN0hR_XdiGZ55NB73ClcrEH4LS4E-QiLzw48htDl2g8xka6YyRfQfgOm0qZ-iGbhHgAZ-V06igjZiXndWH4EsjoN0VhvttV8Zbdr43r3j41Mo5b-ng"
-                      />
-                      <div>
-                        <h4 class="font-bold text-lg">سارة علي</h4>
-                        <p
-                          class="text-sm text-text-light/60 dark:text-text-dark/60"
+                    <div
+                      class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-800 rounded-b-xl z-20"
+                    ></div>
+                    <div
+                      class="absolute inset-0 bg-[#e5ddd5] flex flex-col h-full w-full rounded-[1.5rem] overflow-hidden"
+                    >
+                      <div
+                        class="bg-[#075e54] p-4 pt-8 flex items-center gap-3 shadow-md z-10 text-white"
+                      >
+                        <span
+                          class="material-symbols-outlined text-sm cursor-pointer hover:bg-white/10 rounded-full p-1"
+                          >arrow_forward</span
                         >
-                          طالبة EST Physics
-                        </p>
+                        <div
+                          class="w-10 h-10 rounded-full bg-gray-300 overflow-hidden border border-white/20"
+                        >
+                          <img
+                            alt="Sara Avatar"
+                            class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYRuOdA84DSOiNf6OBT6Hp6esGVzYxk6OcjY1NALrlPut7UyW152iOco25cDFVaIO0r0FyMJ38gMz4KzQY4Xn7vUxEFEEmMSbljCl8KFRvFyWQIA1qAbNdDa_Lu9_pJVo4nba0GmxArQuTAJ0tA7hwHsafpN0hR_XdiGZ55NB73ClcrEH4LS4E-QiLzw48htDl2g8xka6YyRfQfgOm0qZ-iGbhHgAZ-V06igjZiXndWH4EsjoN0VhvttV8Zbdr43r3j41Mo5b-ng"
+                          />
+                        </div>
+                        <div class="flex flex-col">
+                          <span class="font-bold text-sm leading-tight"
+                            >سارة علي</span
+                          >
+                          <span class="text-[10px] opacity-80 leading-tight"
+                            >آخر ظهور اليوم 04:30 م</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="flex-1 overflow-y-auto chat-scroll p-4 flex flex-col gap-3 relative"
+                      >
+                        <div
+                          class="absolute inset-0 opacity-5"
+                          style="
+                            background-image: radial-gradient(
+                              #444 1px,
+                              transparent 1px
+                            );
+                            background-size: 16px 16px;
+                          "
+                        ></div>
+                        <div
+                          class="self-start bg-white rounded-lg rounded-tr-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            الفيزياء كانت عقدتي، بس بعد الكورس بقيت بحل بثقة.
+                          </p>
+                          <span
+                            class="text-[9px] text-gray-500 block text-left mt-1"
+                            >04:15 م</span
+                          >
+                        </div>
+                        <div
+                          class="self-start bg-white rounded-lg rounded-tr-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            وشرح حضرتك للمسائل المعقدة كان عبقري! شكراً يا
+                            دكتور.
+                          </p>
+                          <span
+                            class="text-[9px] text-gray-500 block text-left mt-1"
+                            >04:16 م</span
+                          >
+                        </div>
+                        <div
+                          class="self-end bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            الحمد لله، ده توفيق ربنا. بالتوفيق دايماً يا سارة في
+                            دراستك.
+                          </p>
+                          <div class="flex items-center justify-end gap-1 mt-1">
+                            <span class="text-[9px] text-gray-500"
+                              >04:20 م</span
+                            >
+                            <span
+                              class="material-symbols-outlined text-[12px] text-blue-500"
+                              >done_all</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-[#f0f0f0] p-3 flex items-center gap-2">
+                        <div
+                          class="flex-grow h-8 bg-white rounded-full px-3 flex items-center text-gray-400 text-xs"
+                        >
+                          اكتب رسالة...
+                        </div>
+                        <div
+                          class="w-8 h-8 bg-[#075e54] rounded-full flex items-center justify-center text-white shadow-sm"
+                        >
+                          <span class="material-symbols-outlined text-sm"
+                            >send</span
+                          >
+                        </div>
                       </div>
                     </div>
-                    <p
-                      class="text-text-light/80 dark:text-text-dark/80 italic flex-grow"
-                    >
-                      "الدعم المستمر والمتابعة كانا أفضل ما في التجربة. شعرت
-                      دائمًا أن هناك من يساعدني ويوجهني للطريق الصحيح."
-                    </p>
                   </div>
                 </div>
-                <div class="snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
+                <div class="snap-center flex-shrink-0 w-80 md:w-80 group">
                   <div
-                    class="bg-background-light dark:bg-primary p-8 rounded-xl shadow-lg flex flex-col h-full"
+                    class="relative rounded-[2rem] border-8 border-gray-800 bg-gray-800 shadow-2xl overflow-hidden h-[500px] transition-transform duration-300 group-hover:-translate-y-2"
                   >
-                    <div class="flex items-center mb-4">
-                      <img
-                        alt="Student photo"
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9GJOOgQPnpoIgi5lKDiJ50qtwhlXRFzEh1qpMF4Tft-eGQXsFr_wA4i_g-WOVWhbs2rcXpHKmQh8p_xNuMxfoNEG9LOMiDtHkpUqc-eYglmEA27xmR3xCSpgJ-_002WujpLm38NCNbwx6aQMr5RWo5EI96axu64lqRQGkWKgjwXAU44FxMPBYDfaNFn_q4InIHeaDFKQ-fg6O3fgrPtAV2MkP2i-GXhpaYhMMEO4IxUI1LQHcPRSmy05txwVv0VeIaDBEkZtoMA"
-                      />
-                      <div>
-                        <h4 class="font-bold text-lg">فاطمة الزهراء</h4>
-                        <p
-                          class="text-sm text-text-light/60 dark:text-text-dark/60"
+                    <div
+                      class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-800 rounded-b-xl z-20"
+                    ></div>
+                    <div
+                      class="absolute inset-0 bg-[#e5ddd5] flex flex-col h-full w-full rounded-[1.5rem] overflow-hidden"
+                    >
+                      <div
+                        class="bg-[#075e54] p-4 pt-8 flex items-center gap-3 shadow-md z-10 text-white"
+                      >
+                        <span
+                          class="material-symbols-outlined text-sm cursor-pointer hover:bg-white/10 rounded-full p-1"
+                          >arrow_forward</span
                         >
-                          طالبة AP Calculus
-                        </p>
+                        <div
+                          class="w-10 h-10 rounded-full bg-gray-300 overflow-hidden border border-white/20"
+                        >
+                          <img
+                            alt="Fatma Avatar"
+                            class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9GJOOgQPnpoIgi5lKDiJ50qtwhlXRFzEh1qpMF4Tft-eGQXsFr_wA4i_g-WOVWhbs2rcXpHKmQh8p_xNuMxfoNEG9LOMiDtHkpUqc-eYglmEA27xmR3xCSpgJ-_002WujpLm38NCNbwx6aQMr5RWo5EI96axu64lqRQGkWKgjwXAU44FxMPBYDfaNFn_q4InIHeaDFKQ-fg6O3fgrPtAV2MkP2i-GXhpaYhMMEO4IxUI1LQHcPRSmy05txwVv0VeIaDBEkZtoMA"
+                          />
+                        </div>
+                        <div class="flex flex-col">
+                          <span class="font-bold text-sm leading-tight"
+                            >فاطمة الزهراء</span
+                          >
+                          <span class="text-[10px] opacity-80 leading-tight"
+                            >متصل الآن</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="flex-1 overflow-y-auto chat-scroll p-4 flex flex-col gap-3 relative"
+                      >
+                        <div
+                          class="absolute inset-0 opacity-5"
+                          style="
+                            background-image: radial-gradient(
+                              #444 1px,
+                              transparent 1px
+                            );
+                            background-size: 16px 16px;
+                          "
+                        ></div>
+                        <div
+                          class="self-start bg-white rounded-lg rounded-tr-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            كنت خايفة من الكالكولس، بس الشرح بسط كل حاجة.
+                          </p>
+                          <span
+                            class="text-[9px] text-gray-500 block text-left mt-1"
+                            >09:10 ص</span
+                          >
+                        </div>
+                        <div
+                          class="self-start bg-white rounded-lg rounded-tr-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            جبت 5 في الـ AP! 😍 شكراً دكتور محمد.
+                          </p>
+                          <span
+                            class="text-[9px] text-gray-500 block text-left mt-1"
+                            >09:11 ص</span
+                          >
+                        </div>
+                        <div
+                          class="self-end bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 shadow-sm max-w-[85%] relative z-0"
+                        >
+                          <p class="text-xs text-gray-800 font-medium">
+                            ممتاز جداً! نتيجة مشرفة. فخور بيكي جداً.
+                          </p>
+                          <div class="flex items-center justify-end gap-1 mt-1">
+                            <span class="text-[9px] text-gray-500"
+                              >09:15 ص</span
+                            >
+                            <span
+                              class="material-symbols-outlined text-[12px] text-blue-500"
+                              >done_all</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-[#f0f0f0] p-3 flex items-center gap-2">
+                        <div
+                          class="flex-grow h-8 bg-white rounded-full px-3 flex items-center text-gray-400 text-xs"
+                        >
+                          اكتب رسالة...
+                        </div>
+                        <div
+                          class="w-8 h-8 bg-[#075e54] rounded-full flex items-center justify-center text-white shadow-sm"
+                        >
+                          <span class="material-symbols-outlined text-sm"
+                            >send</span
+                          >
+                        </div>
                       </div>
                     </div>
-                    <p
-                      class="text-text-light/80 dark:text-text-dark/80 italic flex-grow"
-                    >
-                      "لم أكن أتخيل أن مادة الكالكولس يمكن أن تكون بهذه السهولة.
-                      شكراً دكتور احمد على مجهودك الرائع."
-                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section class="py-20" id="faq">
-          <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-12">
-              <h2
-                class="text-3xl font-bold tracking-tight text-primary dark:text-accent-gold"
-              >
-                أسئلة يتكرر طرحها
-              </h2>
-              <p class="text-lg text-text-light/80 dark:text-text-dark/80 mt-2">
-                كل ما تحتاج معرفته قبل الانضمام إلينا.
-              </p>
-            </div>
-            <div class="space-y-4">
-              <details
-                class="group p-6 rounded-lg bg-secondary dark:bg-primary/50 cursor-pointer transition-all duration-300 open:bg-white dark:open:bg-primary open:shadow-lg"
-              >
-                <summary
-                  class="flex justify-between items-center font-bold text-lg"
-                >
-                  <div class="flex items-center gap-4">
-                    <span class="material-symbols-outlined text-accent-gold"
-                      >how_to_reg</span
-                    >
-                    <span>كيف يمكنني الاشتراك في الكورسات؟</span>
-                  </div>
-                  <span
-                    class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180"
-                    >expand_more</span
-                  >
-                </summary>
-                <p class="mt-4 text-text-light/70 dark:text-text-dark/70 pr-10">
-                  يمكنك الاشتراك بسهولة بالتوجه إلى قسم "احجز مكانك الآن" في
-                  نهاية الصفحة، قم بملء البيانات المطلوبة، وسيقوم فريقنا
-                  بالتواصل معك لتأكيد التسجيل وإتمام الدفع.
-                </p>
-              </details>
-              <details
-                class="group p-6 rounded-lg bg-secondary dark:bg-primary/50 cursor-pointer transition-all duration-300 open:bg-white dark:open:bg-primary open:shadow-lg"
-              >
-                <summary
-                  class="flex justify-between items-center font-bold text-lg"
-                >
-                  <div class="flex items-center gap-4">
-                    <span class="material-symbols-outlined text-accent-gold"
-                      >smart_display</span
-                    >
-                    <span>هل المحاضرات مسجلة أم مباشرة؟</span>
-                  </div>
-                  <span
-                    class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180"
-                    >expand_more</span
-                  >
-                </summary>
-                <p class="mt-4 text-text-light/70 dark:text-text-dark/70 pr-10">
-                  نقدم نظامًا هجينًا يجمع بين أفضل ما في العالمين: محاضرات مسجلة
-                  عالية الجودة للمرونة، وجلسات مباشرة أسبوعية للمراجعة، حل
-                  الأسئلة، والتفاعل المباشر.
-                </p>
-              </details>
-              <details
-                class="group p-6 rounded-lg bg-secondary dark:bg-primary/50 cursor-pointer transition-all duration-300 open:bg-white dark:open:bg-primary open:shadow-lg"
-              >
-                <summary
-                  class="flex justify-between items-center font-bold text-lg"
-                >
-                  <div class="flex items-center gap-4">
-                    <span class="material-symbols-outlined text-accent-gold"
-                      >credit_card</span
-                    >
-                    <span>ما هي طرق الدفع المتاحة؟</span>
-                  </div>
-                  <span
-                    class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180"
-                    >expand_more</span
-                  >
-                </summary>
-                <p class="mt-4 text-text-light/70 dark:text-text-dark/70 pr-10">
-                  نقبل الدفع عبر بطاقات الائتمان (فيزا/ماستركارد)، المحافظ
-                  الإلكترونية (فودافون كاش)، والتحويلات البنكية لتوفير أقصى
-                  درجات المرونة لطلابنا.
-                </p>
-              </details>
             </div>
           </div>
         </section>
@@ -697,105 +800,38 @@
           id="register"
         >
           <div class="container mx-auto px-4">
-            <div class="text-center">
-              <h2 class="text-4xl font-black text-accent-gold">
+            <div
+              class="flex flex-col items-center justify-center text-center max-w-3xl mx-auto"
+            >
+              <h2 class="text-4xl font-black text-accent-gold mb-6">
                 احجز مكانك الآن وابدأ التفوق!
               </h2>
-              <p class="text-lg text-white/80 mt-2 mb-4">
-                عرض خاص لفترة محدودة! خصم 20% للتسجيل المبكر.
+              <p class="text-xl text-white/90 mb-10 leading-relaxed">
+                للحجز والاستفسار عن المواعيد والتفاصيل، يرجى التواصل معنا مباشرة
+                عبر واتساب. فريقنا جاهز للرد على جميع استفساراتك وتأكيد حجزك في
+                الكورس المناسب.
               </p>
-              <div
-                class="flex justify-center items-center gap-4 text-4xl font-bold mb-8"
+              <a
+                class="group relative flex items-center justify-center gap-3 overflow-hidden rounded-xl bg-accent-gold px-8 py-5 text-white shadow-lg shadow-accent-gold/20 transition-all hover:bg-opacity-90 hover:shadow-2xl hover:shadow-glow-yellow"
+                href="https://wa.link/7i8shq"
+                target="_blank"
               >
-                <div>
-                  <span class="block text-sm font-normal">يوم</span
-                  ><span>07</span>
-                </div>
-                :
-                <div>
-                  <span class="block text-sm font-normal">ساعة</span
-                  ><span>12</span>
-                </div>
-                :
-                <div>
-                  <span class="block text-sm font-normal">دقيقة</span
-                  ><span>45</span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="max-w-2xl mx-auto bg-white dark:bg-gray-900/50 p-8 rounded-xl shadow-2xl"
-            >
-              <form class="space-y-6">
-                <div>
-                  <label
-                    class="block text-sm font-medium text-text-light dark:text-text-dark"
-                    for="name"
-                    >الاسم الكامل</label
-                  >
-                  <input
-                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-accent-yellow focus:ring focus:ring-accent-yellow focus:ring-opacity-50 text-text-light dark:text-text-dark"
-                    id="name"
-                    name="name"
-                    required=""
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <label
-                    class="block text-sm font-medium text-text-light dark:text-text-dark"
-                    for="email"
-                    >البريد الإلكتروني</label
-                  >
-                  <input
-                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-accent-yellow focus:ring focus:ring-accent-yellow focus:ring-opacity-50 text-text-light dark:text-text-dark"
-                    id="email"
-                    name="email"
-                    required=""
-                    type="email"
-                  />
-                </div>
-                <div>
-                  <label
-                    class="block text-sm font-medium text-text-light dark:text-text-dark"
-                    for="phone"
-                    >رقم الهاتف</label
-                  >
-                  <input
-                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-accent-yellow focus:ring focus:ring-accent-yellow focus:ring-opacity-50 text-text-light dark:text-text-dark"
-                    id="phone"
-                    name="phone"
-                    required=""
-                    type="tel"
-                  />
-                </div>
-                <div>
-                  <label
-                    class="block text-sm font-medium text-text-light dark:text-text-dark"
-                    for="course"
-                    >اختر الكورس</label
-                  >
-                  <select
-                    class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 shadow-sm focus:border-accent-yellow focus:ring focus:ring-accent-yellow focus:ring-opacity-50 text-text-light dark:text-text-dark"
-                    id="course"
-                    name="course"
-                  >
-                    <option>كورس EST</option>
-                    <option>كورس SAT</option>
-                    <option>SAT Digital</option>
-                    <option>AP Calculus</option>
-                  </select>
-                </div>
-                <button
-                  class="w-full group relative flex min-w-[220px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-6 bg-accent-yellow text-slate-900 text-lg font-bold shadow-lg shadow-accent-yellow/30 transition-all hover:shadow-glow-yellow"
-                  type="submit"
+                <span
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white/20 rounded-full sparkle opacity-0"
+                ></span>
+                <svg
+                  class="h-8 w-8 fill-current z-10"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-white/20 rounded-full sparkle opacity-0"
-                  ></span>
-                  <span class="truncate z-10">سجل الآن واحصل على الخصم</span>
-                </button>
-              </form>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  ></path>
+                </svg>
+                <span class="text-xl font-bold z-10"
+                  >تواصل معنا عبر واتساب</span
+                >
+              </a>
             </div>
           </div>
         </section>
@@ -805,11 +841,11 @@
       >
         <div class="container mx-auto px-4">
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-right"
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 text-center md:text-right"
           >
             <div>
               <h3 class="text-xl font-bold mb-4 text-accent-gold">
-                د. احمد حسن
+                د. محمد حسن
               </h3>
               <p class="text-sm text-white/70">
                 رحلتك نحو التميز في الدبلومة الأمريكية تبدأ من هنا.
@@ -817,7 +853,8 @@
               <div class="flex justify-center md:justify-start gap-4 mt-6">
                 <a
                   class="text-white/70 hover:text-accent-yellow transition-colors"
-                  href="#"
+                  href="https://www.facebook.com/drahmedhassansatact"
+                  target="_blank"
                   ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
                       d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
@@ -825,7 +862,8 @@
                 ></a>
                 <a
                   class="text-white/70 hover:text-accent-yellow transition-colors"
-                  href="#"
+                  href="https://www.instagram.com/drahmedhassansatact/"
+                  target="_blank"
                   ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
                       d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"
@@ -833,7 +871,8 @@
                 ></a>
                 <a
                   class="text-white/70 hover:text-accent-yellow transition-colors"
-                  href="#"
+                  href="https://www.youtube.com/@drahmedhassanmath"
+                  target="_blank"
                   ><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
                       d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
@@ -843,55 +882,32 @@
             </div>
             <div>
               <h3 class="text-xl font-bold mb-4 text-accent-gold">
-                روابط سريعة
-              </h3>
-              <ul class="space-y-2">
-                <li>
-                  <a
-                    class="text-sm text-white/70 hover:text-accent-yellow transition-colors"
-                    href="#about"
-                    >من نحن</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-sm text-white/70 hover:text-accent-yellow transition-colors"
-                    href="#courses"
-                    >الكورسات</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-sm text-white/70 hover:text-accent-yellow transition-colors"
-                    href="#testimonials"
-                    >آراء الطلاب</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-sm text-white/70 hover:text-accent-yellow transition-colors"
-                    href="#faq"
-                    >الأسئلة الشائعة</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold mb-4 text-accent-gold">
                 تواصل معنا
               </h3>
               <ul class="space-y-2">
                 <li
                   class="flex items-center justify-center md:justify-start gap-2 text-sm text-white/70"
                 >
-                  <span class="material-symbols-outlined text-base">mail</span
-                  >contact@drmhassan.com
+                  <span class="material-symbols-outlined text-base">mail</span>
+                  <a
+                    href="mailto:eng_ahmed_hassan_adam@hotmail.com"
+                    class="hover:text-white transition-colors"
+                  >
+                    eng_ahmed_hassan_adam@hotmail.com
+                  </a>
                 </li>
+
                 <li
                   class="flex items-center justify-center md:justify-start gap-2 text-sm text-white/70"
                 >
-                  <span class="material-symbols-outlined text-base">call</span
-                  >+20 123 456 7890
+                  <span class="material-symbols-outlined text-base">call</span>
+                  <a
+                    href="tel:+201014577555"
+                    class="hover:text-white transition-colors"
+                    dir="ltr"
+                  >
+                    010 145 77555
+                  </a>
                 </li>
               </ul>
             </div>
@@ -899,7 +915,7 @@
           <div
             class="border-t border-gray-700 pt-6 text-center text-sm text-white/50"
           >
-            <p>© 2024 د. احمد حسن. جميع الحقوق محفوظة.</p>
+            <p>© 2024 د. محمد حسن. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>
